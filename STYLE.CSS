@@ -1,0 +1,485 @@
+/* General Reset */
+#div1{
+    background-image: url(ASM-_MASTER-PLAN_BASTI_CAM-1-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-color: peachpuff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background:peachpuff;
+}
+
+/* Header Styling */
+header {
+    background: #021f49;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    background: linear-gradient(90deg, #021f49 , #021f49 );
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero button {
+    padding: 15px 25px;
+    border: none;
+    background: #021f49;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background:#021f49;
+    color: white;
+    padding: 10px;
+}
+/* Navigation with Icons */
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Hero Section Background */
+.hero {
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Events Section */
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.events .event {
+    background: 
+ rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.events .event img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Responsive Layout */
+.responsive-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+/* Form Styling */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #021f49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:  #021f49;
+}
+
+/* Student List */
+.students-list ul {
+    list-style:circle;
+    padding: 0;
+}
+
+.students-list ul li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile First Responsiveness */
+@media (min-width: 600px) {
+    .responsive-container {
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    form, .students-list {
+        width: 48%;
+    }
+}
+/* Courses Container */
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+/* Course Card */
+.course-card {
+    background: #ffffff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card h2 {
+    margin-bottom: 10px;
+    color:  #021f49;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .course-card {
+        width: 48%;
+    }
+}
+
+@media (min-width: 900px) {
+    .course-card {
+        width: 30%;
+    }
+}
+/* Faculty Section */
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.faculty-card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.faculty-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.faculty-card h2 {
+    margin: 10px 0;
+    color:  #021f49;
+}
+
+.faculty-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .faculty-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .faculty-card {
+        width: 30%;
+    }
+}
+/* Events Section */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.event-card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.event-card h2 {
+    margin: 10px 0;
+    color:  #021f49;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.event-card button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color:  #021f49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-card button:hover {
+    background-color:  #021f49;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .event-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .event-card {
+        width: 30%;
+    }
+}
+/* Container for Students Section */
+.student-container {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+/* Registration Form */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #021f49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #021f49;
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-section input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Progress Section */
+.student-progress {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#progress-bar {
+    background: #ddd;
+    height: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+#progress-fill {
+    background:   #021f49;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+}
+
+#progress-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Student List */
+.students-list {
+    margin-top: 20px;
+}
+
+#student-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.student-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.student-card h3 {
+    margin: 5px 0;
+}
+
+.student-card p {
+    color: #555;
+}
+
+/* Highlights Section */
+.highlights {
+    background: #022049bd;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.highlights h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.highlight-item {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: scale(1.05);
+}
+
+.highlight-item i {
+    font-size: 40px;
+    color: #021f49;
+    margin-bottom: 10px;
+}
